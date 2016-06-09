@@ -2153,7 +2153,7 @@ ul.list_icons li i{
 	font-size:18px;
 	text-align:center;
 	cursor:pointer;
-	color:#79c34e !important;
+	color:#FFFFFF !important;
 }
 .wishlist_close:before{
 	 font-style: normal;
@@ -2161,7 +2161,7 @@ ul.list_icons li i{
   font-family: "icon_set_1";
   font-size:30px;
   content: "\72";
-  color:#79c34e;
+  color:#FFFFFF;
   position:absolute;
   left:0;
   top:3px;

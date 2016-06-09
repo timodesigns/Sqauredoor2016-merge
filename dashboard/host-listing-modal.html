@@ -197,11 +197,12 @@
                             <h2>Listings</h2>
                             <div class="col-md-9">
  
-                <div class="row add_top_15">
+                                <div class="row add_top_15">
                             <div class="strip_all_tour_list">
                    <div class="row">
                 	<div class="col-lg-4 col-md-4 col-sm-4">
                     	<div class="img_list"><a href="../detail.html"><img src="../img/features-intro-01.jpg"alt=""></a>
+                            <div class="ribbon pending"></div>
                         </div>
                     </div>
                      <div class="clearfix visible-xs-block"></div>
@@ -274,6 +275,8 @@
   </div>
 </div>
                     </div>
+                                         <div class="clearfix visible-xs-block mtop10"></div>
+
 					<div class="col-lg-3 col-md-3 col-sm-3">
                     	<div class="price_list"><div><sup>$</sup>49*<span class="normal_price_list">$99</span><small >*Per person</small>
                         <p><a href="../detail.html" class="btn_1">Details</a></p>
@@ -291,6 +294,7 @@
                    <div class="row">
                 	<div class="col-lg-4 col-md-4 col-sm-4">
                     	<div class="img_list"><a href="../detail.html"><img src="../img/features-intro-01.jpg"alt=""></a>
+                            <div class="ribbon pending"></div>
                         </div>
                     </div>
                      <div class="clearfix visible-xs-block"></div>
@@ -300,40 +304,73 @@
                             <p>Property Owner: <strong>Isabel Lopez</strong></p>
                             <p>Address: <strong>123 Constitution Drive, Menlo Park, CA 94554</strong></p>
                             <hr>
-                            <a href="../list-1.html">edit</a>  |  <a href="">calendar</a>  |  <a href="">promo</a>
+                            <a href="../list-1.html">edit</a>  |  <a href="">calendar</a>  |  <a href="" data-toggle="modal" data-target="#myModal-2">promo</a>
                             </div>
+                            <!-- Modal -->
+<div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Add Promo</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" >
+                        </div>
                     </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label>Promo code</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <label><i class="icon-calendar-7"></i> Check in</label>
+                        <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                     <div class="form-group">
+                        <label><i class="icon-calendar-7"></i> Check out</label>
+                        <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label>Discount %</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                            <label>Number of coupons</label>
+                            <input type="text" class="form-control" >
+                        </div>
+                    </div>
+            </div>  
+            <input type="checkbox" name="policy_terms" id="policy_terms"> Enabled     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
+                                         <div class="clearfix visible-xs-block mtop10"></div>
+
 					<div class="col-lg-3 col-md-3 col-sm-3">
-                    	<div class="price_list"><div><sup>$</sup>39*<span class="normal_price_list">$99</span><small >*Per person</small>
-                        <p><a href="../detail.html" class="btn_1">Details</a></p>
-                        
-                        </div>
-                       
-                        </div>
-                    </div>
-                    </div>
-				</div>
-                </div><!--END LIST-->
-                
-                <div class="row">
-                            <div class="strip_all_tour_list">
-                   <div class="row">
-                	<div class="col-lg-4 col-md-4 col-sm-4">
-                    	<div class="img_list"><a href="../detail.html"><img src="../img/features-intro-01.jpg"alt=""></a>
-                        </div>
-                    </div>
-                     <div class="clearfix visible-xs-block"></div>
-                    <div class="col-lg-5 col-md-5 col-sm-5">
-                    		<div class="dashboard_list">
-                    		<h3>Name of the property can go here</h3>
-                            <p>Property Owner: <strong>Isabel Lopez</strong></p>
-                            <p>Address: <strong>123 Constitution Drive, Menlo Park, CA 94554</strong></p>
-                            <hr>
-                            <a href="../list-1.html">edit</a>  |  <a href="">calendar</a>  |  <a href="">promo</a>
-                            </div>
-                    </div>
-					<div class="col-lg-3 col-md-3 col-sm-3">
-                    	<div class="price_list"><div><sup>$</sup>39*<span class="normal_price_list">$99</span><small >*Per person</small>
+                    	<div class="price_list"><div><sup>$</sup>49*<span class="normal_price_list">$99</span><small >*Per person</small>
                         <p><a href="../detail.html" class="btn_1">Details</a></p>
                         
                         </div>

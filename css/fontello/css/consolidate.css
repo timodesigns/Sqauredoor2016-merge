@@ -1,0 +1,166 @@
+@font-face {
+  font-family: 'icon_set_1';
+  src: url('../font/icon_set_1.eot?55361665');
+  src: url('../font/icon_set_1.eot?55361665#iefix') format('embedded-opentype'),
+       url('../font/icon_set_1.woff?55361665') format('woff'),
+       url('../font/icon_set_1.ttf?55361665') format('truetype'),
+       url('../font/icon_set_1.svg?55361665#icon_set_1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icon_set_1';
+    src: url('../font/icon_set_1.svg?55361665#icon_set_1') format('svg');
+  }
+}
+*/
+
+[class^="icon_set_1_"]:before, [class*="icon_set_1_"]:before {
+  font-family: "icon_set_1";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+
+.icon_set_1_icon-62:before { content: '\5e'; } /* '^' */
+.icon_set_1_icon-84:before { content: '\74'; } /* 't' */
+.icon_set_1_icon-94:before { content: '\7e'; } /* '~' */
+.icon_set_1_icon-77:before { content: '\6d'; } /* 'm' */
+.icon_set_1_icon-29:before { content: '\3d'; } /* '=' */
+.icon_set_1_icon-86:before { content: '\76'; } /* 'v' */
+.icon_set_1_icon-22:before { content: '\35'; } /* '5' */
+.icon_set_1_icon-13:before { content: '\2d'; } /* '-' */
+.icon_set_1_icon-27:before { content: '\3b'; } /* ';' */
+.icon_set_1_icon-89:before { content: '\79'; } /* 'y' */
+.icon_set_1_icon-95:before { content: '\e800'; } /* '' */
+.icon_set_1_icon-65:before { content: '\61'; } /* 'a' */
+
+
+
+
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?32974303');
+  src: url('../font/fontello.eot?32974303#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?32974303') format('woff'),
+       url('../font/fontello.ttf?32974303') format('truetype'),
+       url('../font/fontello.svg?32974303#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?32974303#fontello') format('svg');
+  }
+}
+*/
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-phone:before { content: '\e872'; } /* '' */
+.icon-mobile-1:before { content: '\ea21'; } /* '' */
+.icon-email:before { content: '\edc5'; } /* '' */
+.icon-down-open-mini:before { content: '\e9ec'; } /* '' */
+.icon-facebook:before { content: '\e94e'; } /* '' */
+.icon-twitter:before { content: '\e969'; } /* '' */
+.icon-google:before { content: '\edb2'; } /* '' */
+.icon-instagram:before { content: '\ea7e'; } /* '' */
+.icon-linkedin:before { content: '\e95c'; } /* '' */
+.icon-star:before { content: '\e80b'; } /* '' */
+.icon-star-empty:before { content: '\e80c'; } /* '' */
+.icon-pinterest:before { content: '\ea6d'; } /* '' */
+.icon-pinterest-circled-1:before { content: '\ea6e'; } /* '' */
+.icon-vimeo:before { content: '\ea64'; } /* '' */
+.icon-vimeo-circled:before { content: '\ea65'; } /* '' */
+.icon-youtube:before { content: '\e970'; } /* '' */
+.icon-youtube-squared:before { content: '\e971'; } /* '' */
+.icon-youtube-play:before { content: '\e972'; } /* '' */
+.icon-heart:before { content: '\e809'; } /* '' */
+.icon-heart-empty:before { content: '\e80a'; } /* '' */
+.icon-calendar-7:before { content: '\ee4e'; } /* '' */
+.icon-plus-circled:before { content: '\e822'; } /* '' */
+.icon-eye:before { content: '\e839'; } /* '' */
+.icon-help-circled:before { content: '\e82c'; } /* '' */
+.icon-left:before { content: '\e8a7'; } /* '' */
+.icon-right:before { content: '\e8a8'; } /* '' */
+.icon-pencil:before { content: '\e852'; } /* '' */
+.icon-pencil-squared:before { content: '\e853'; } /* '' */
+.icon-play-circled2-1:before { content: '\ef09'; } /* '' */
+.icon-user-2:before { content: '\ea9b'; } /* '' */
+.icon-cog-1:before { content: '\e9ca'; } /* '' */
+.icon-box-2:before { content: '\eb04'; } /* '' */
+.icon-chart-bar-outline:before { content: '\eb87'; } /* '' */
+.icon-chart-bar-2:before { content: '\eb88'; } /* '' */
+.icon-key-3:before { content: '\ec56'; } /* '' */
+.icon-gauge-2:before { content: '\ef4e'; } /* '' */
+.icon-key-1:before { content: '\ea4c'; } /* '' */
+
+
+
+
+
+
+

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Squaredoor</title>
+	
+    <!-- Bootstrap -->
+    <link href="css/base.css" rel="stylesheet" media="screen">
+    <!-- CSS -->
+    <link href="css/slider-pro.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+         <link href="css/date_time_picker.css" rel="stylesheet">
+
+
+
+
+	
+    <!-- Google web fonts -->
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+         <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body id="top">
+  
+  <!--[if lte IE 8]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+<![endif]-->
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+    
+	<header id="plain">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/logo_sticky.png" width="160" height="34" data-retina="true" class="logo_normal"></a>
+                        <a href="index.html"><img src="img/logo_sticky.png" width="160" height="34" data-retina="true" class="logo_sticky"></a>
+                    </div>
+                    
+                </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/logo_sticky.png" width="160" height="34" alt="Squaredoor" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="submenu"><a href=""><span class="btn-listProp">List a Property</span></a></li>
+                            <li class="submenu"><a href=""><span class="btn-rentalPro">Vacation Rental Pro</span></a></li>
+                            <li><a href="">Sign up</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/avatar3.jpg" alt="" class="img-account"> Stephanie <i class="icon-down-open-mini"></i></a>
+                            <ul class="dropdown-menu" id="cart_items">
+                                    <li><a href=""><i class="icon-user-2"></i> Pro Profile</a></li>
+                                    <li><a href=""><i class="icon-chart-bar-2"></i> Dashboard</a></li>
+                                    <li><a href=""><i class="icon-cog-1"></i> Settings</a></li>
+                                    <li><a href=""><i class="icon-box-2"></i> Pro Resource Center</a></li>
+                                     <li><a href=""><i class="icon-key-1"></i> Logout</a></li>   
+                                </ul>
+                                </div></li>
+                            
+     
+                        </ul>
+                    </div><!-- End main-menu -->
+                    
+                </nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+	
+	
+	
+    <!-- CONTENT -->
+
+ <section class="parallax-window" data-parallax="scroll" data-image-src="img/single_hotel_bg_1.jpg" data-natural-width="1400" data-natural-height="470">
+    <div class="parallax-content-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <span class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class=" icon-star-empty"></i></span>
+                    <h1>Boat House</h1>
+                    <span>Siripuram, Vizag, Andhra Pradesh, India - 530017</span>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div id="price_single_main" class="hotel">
+                        from/per night <span><sup>$</sup>95</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section><!-- End section -->
+
+    <div id="position">
+            <div class="container">
+                        <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Andhra Pradesh</a></li>
+                        <li><a href="#">Vizag</a></li>
+                        <li>Boat House</li>
+                        </ul>
+            </div>
+    </div><!-- End Position -->
+
+    
+     <div class="collapse" id="collapseMap">
+        <div id="map" class="map"></div>
+    </div><!-- End Map -->
+    
+    <div class="container margin_60">
+    <div class="row">
+        <div class="col-md-8" id="single_tour_desc">
+            <div id="single_tour_feat">
+                <ul>
+                    <li><i class="icon_set_1_icon-29"></i>Maximum 4 guests</li>
+                    <li><i class="icon_set_1_icon-86"></i>Free Wifi</li>
+                    <li><i class="icon_set_1_icon-22"></i>Pet allowed</li>
+                    <li><i class="icon_set_1_icon-13"></i>Accessibiliy</li>
+                    <li><i class="icon_set_1_icon-27"></i>Parking</li>
+                </ul>
+            </div>
+            <p class="visible-sm visible-xs"><a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap">View on map</a></p><!-- Map button for tablets/mobiles -->
+            <div id="Img_carousel" class="slider-pro">
+                <div class="sp-slides">
+                
+                    <div class="sp-slide">
+                        <img alt="" class="sp-image" src="../src/css/images/blank.gif" 
+                        data-src="img/1_medium.jpg" 
+                        data-small="img1_small.jpg" 
+                        data-medium="img/1_medium.jpg" 
+                        data-large="img/1_large.jpg" 
+                        data-retina="img/1_large.jpg">
+                    </div>
+                    <div class="sp-slide">
+                        <img alt="" class="sp-image" src="../src/css/images/blank.gif" 
+                        data-src="img/1_medium.jpg" 
+                        data-small="img1_small.jpg" 
+                        data-medium="img/1_medium.jpg" 
+                        data-large="img/1_large.jpg" 
+                        data-retina="img/1_large.jpg">
+
+                    </div>
+                    
+                    <div class="sp-slide">
+                        <img alt="" class="sp-image" src="../src/css/images/blank.gif" 
+                        data-src="img/1_medium.jpg" 
+                        data-small="img1_small.jpg" 
+                        data-medium="img/1_medium.jpg" 
+                        data-large="img/1_large.jpg" 
+                        data-retina="img/1_large.jpg">
+                        
+                    </div>
+                    
+                    <div class="sp-slide">
+                        <img alt="" class="sp-image" src="../src/css/images/blank.gif" 
+                        data-src="img/1_medium.jpg" 
+                        data-small="img1_small.jpg" 
+                        data-medium="img/1_medium.jpg" 
+                        data-large="img/1_large.jpg" 
+                        data-retina="img/1_large.jpg">
+                        
+                    </div>
+                    
+                    <div class="sp-slide">
+                        <img alt="" class="sp-image" src="../src/css/images/blank.gif" 
+                        data-src="img/1_medium.jpg" 
+                        data-small="img1_small.jpg" 
+                        data-medium="img/1_medium.jpg" 
+                        data-large="img/1_large.jpg" 
+                        data-retina="img/1_large.jpg">
+                        
+                    </div>
+                    
+                    <div class="sp-slide">
+                        <img alt="" class="sp-image" src="../src/css/images/blank.gif" 
+                        data-src="img/1_medium.jpg" 
+                        data-small="img1_small.jpg" 
+                        data-medium="img/1_medium.jpg" 
+                        data-large="img/1_large.jpg" 
+                        data-retina="img/1_large.jpg">
+                        
+                    </div>
+                    
+                    <div class="sp-slide">
+                        <img alt="" class="sp-image" src="../src/css/images/blank.gif" 
+                        data-src="img/1_medium.jpg" 
+                        data-small="img1_small.jpg" 
+                        data-medium="img/1_medium.jpg" 
+                        data-large="img/1_large.jpg" 
+                        data-retina="img/1_large.jpg">
+                        
+                    </div>
+                    
+                    <div class="sp-slide">
+                        <img alt="" class="sp-image" src="../src/css/images/blank.gif" 
+                        data-src="img/1_medium.jpg" 
+                        data-small="img1_small.jpg" 
+                        data-medium="img/1_medium.jpg" 
+                        data-large="img/1_large.jpg" 
+                        data-retina="img/1_large.jpg">
+                       
+                    </div>
+                    
+                    <div class="sp-slide">
+                        <img alt="" class="sp-image" src="../src/css/images/blank.gif" 
+                        data-src="img/1_medium.jpg" 
+                        data-small="img1_small.jpg" 
+                        data-medium="img/1_medium.jpg" 
+                        data-large="img/1_large.jpg" 
+                        data-retina="img/1_large.jpg">
+                    </div>
+                </div>
+                <div class="sp-thumbnails">
+                    <img alt="" class="sp-thumbnail" src="img/1_medium.jpg">
+                    <img alt="" class="sp-thumbnail" src="img/1_medium.jpg">
+                    <img alt="" class="sp-thumbnail" src="img/1_medium.jpg">
+                    <img alt="" class="sp-thumbnail" src="img/1_medium.jpg">
+                    <img alt="" class="sp-thumbnail" src="img/1_medium.jpg">
+                    <img alt="" class="sp-thumbnail" src="img/1_medium.jpg">
+                    <img alt="" class="sp-thumbnail" src="img/1_medium.jpg">
+                    <img alt="" class="sp-thumbnail" src="img/1_medium.jpg">
+                    <img alt="" class="sp-thumbnail" src="img/1_medium.jpg">
+                </div>
+            </div>
+            <br>
+            <table class="table table-condensed">
+                           
+                            <tbody>
+                              <tr>
+                                <td>Property Type</td>
+                                <td><span style="color: #51bce6">Boat house</span></td>
+                              </tr>
+                              <tr>
+                                <td>Accommodates</td>
+                                <td><div class="tooltip_styled tooltip-effect-1"><span style="color: #51bce6" class="tooltip-item">4 [max] <i class="icon-help-circled"></i></span>
+                                <div class="tooltip-content">
+                                The property can only accommodate up to 4 guests. 
+                                </div>
+                                </div></td>
+                              </tr>
+                              <tr>
+                                <td>Bedrooms</td>
+                                <td><span style="color: #51bce6">1</span></td>
+                              </tr>
+                              <tr>
+                                <td>Bathrooms</td>
+                                <td><span style="color: #51bce6">1</span></td>
+                              </tr>
+                              <tr>
+                                <td>Local tax</td>
+                                <td><span style="color: #51bce6">0</span></td>
+                              </tr>
+                              <tr>
+                                <td>Children price</td>
+                                <td><span style="color: #51bce6">2</span></td>
+                              </tr>
+                              <tr>
+                                <td>Check In / Check Out</td>
+                                <td><span style="color: #51bce6">3 PM / 11 AM</span></td>
+                              </tr>
+                              <tr>
+                                <td>Cancellation</td>
+                                <td>
+                                <span style="color: #51bce6"><a href="cancellation.html">Medium <i class="icon-eye"></i></a></span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Description</h4>
+                </div>
+                <div class="col-md-9">
+                    <p>
+                        Lorem ipsum dolor sit amet, at omnes deseruisse pri. Quo aeterno legimus insolens ad. Sit cu detraxit constituam, an mel iudico constituto efficiendi. Eu ponderum mediocrem has, vitae adolescens in pro. Mea liber ridens inermis ei, mei legendos vulputate an, labitur tibique te qui.
+                    </p>
+                </div><!-- End col-md-9  -->
+            </div><!-- End row  -->
+            
+          	<hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Amenities</h4>
+                </div>
+                <div class="col-md-9">
+                    
+                    
+                    
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                        <h5>Basics</h5>
+                            <ul class="list_ok">
+                                <li>Cable/Satellite TV</li>
+                                <li>Family/Kid Friendly</li>
+                                <li>First Aid Kit</li>
+                                <li>Free Wifi</li>
+                                <li>Handicap Accessible</li>
+                                <li>Pets allowed</li>
+                                <li>Parking</li>
+                                <li>Smoking allowed</li>
+                                <li>Washer/Dryer</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                        <h5>Additional Features</h5>
+                            <ul class="list_ok">
+                                <li>Air Conditioning</li>
+                                <li>Central Heating</li>
+                                <li>Elevator</li>
+                                <li>Indoor Fireplace</li>
+                                <li>Gym</li>
+                                <li>Pool table</li>
+                            </ul>
+                        </div>
+                    </div><!-- End row  -->
+                    <a class="btn_collapse" data-toggle="collapse" href="#collapseForm" aria-expanded="false" aria-controls="collapseForm">
+            	<i class="icon-plus-circled"></i>More
+            </a> 
+            <div class="collapse" id="collapseForm">
+            	<div class="row">
+                        <div class="col-md-6 col-sm-6">
+                        <h5>Kitchen</h5>
+                            <ul class="list_ok">
+                                <li>Coffee Maker</li>
+                                <li>Cookware</li>
+                                <li>Cooking utensils</li>
+                                <li>Dishwasher</li>
+                                <li>Dinnerware</li>
+                                <li>Gas range</li>
+                                <li>Glassware</li>
+                                <li>Microwave</li>
+                                <li>Oven</li>
+								<li>Silverware</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                        <h5>Bedroom</h5>
+                            <ul class="list_ok">
+                                <li>Bed Linens</li>
+                                <li>Extra Blankets</li>
+                                <li>Hangers</li>
+                                <li>Iron</li>
+                                <li>King Sized Bed</li>
+                            </ul>
+                        </div>
+                    </div><!-- End row  -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                        <h5>Bathroom</h5>
+                            <ul class="list_ok">
+                                <li>Bathtub</li>
+                                <li>Shower stall</li>
+                                <li>Bath towels</li>
+                                <li>Basic toiletries</li>
+                                <li>Hairdryer</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                        <h5>Entertainment</h5>
+                            <ul class="list_ok">
+                                <li>DVD player</li>
+                                <li>CD player</li>
+                                <li>iPod dock</li>
+                                <li>Plasma TV</li>
+                                <li>Board games</li>
+                            </ul>
+                        </div>
+                    </div><!-- End row  -->
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                        <h5>Outdoors</h5>
+                            <ul class="list_ok">
+                                <li>Barbeque Grill</li>
+                                <li>Pool</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                        <h5>Safety</h5>
+                            <ul class="list_ok">
+                                <li>Smoke detector</li>
+                                <li>Carbon Monoxide detector</li>
+                            </ul>
+                        </div>
+                    </div><!-- End row  -->
+                    *Number of items provided above accommodates maximum guests allowed.
+	
+            </div><!-- End collapse form -->
+                    
+                </div><!-- End col-md-9  -->
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>House Rules</h4>
+                </div>
+                <div class="col-md-9">
+
+                    <ul class="list_ok">
+                    <li>Adults only</li>
+                    <li>Pets allowed</li>
+                    <li>Smoking allowed</li>
+                    </ul>
+                    <p>There will be no loud or large parties in the apartment or on the premise. All listed will maintain the premises in good order and appearance and conduct themselves in a manner inoffensive to the neighbors. This is a non-smoking home. Any violation of the smoking policy will incur a 0.00 fine. The whirlpool tubs and pools are provided for the enjoyment of adult guests. Keep children away from the tub unless there is constant adult supervision. Beds may be left unmade and sheets and pillowcases left on. Make sure all doors and windows are locked and shut. We will not be liable or responsible for personal items left behind, lost or stolen. We shall not be liable to you, your guests, licenses or invitees or any other person for any injury, loss or damage to any person or property on or about the premises.</p>
+                </div><!-- End col-md-9  -->
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Reviews</h4>
+                    <a href="#" class="btn_1 add_bottom_30" data-toggle="modal" data-target="#myReview">Leave a review</a>
+                </div>
+                <div class="col-md-9">
+                
+                    
+                    <div class="review_strip_single">
+                        <img src="img/avatar1.jpg" alt="" class="img-circle">
+                        <small> - 10 March 2015 -</small>
+                        <h4>Jhon Doe</h4>
+                        <p>
+                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+                        </p>
+                        <div class="rating">
+                            <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><i class="icon-star"></i>
+                        </div>
+                    </div><!-- End review strip -->
+                    
+                    <div class="review_strip_single">
+                        <img src="img/avatar2.jpg" alt="" class="img-circle">
+                        <small> - 10 March 2015 -</small>
+                        <h4>Jhon Doe</h4>
+                        <p>
+                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+                        </p>
+                        <div class="rating">
+                            <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><i class="icon-star"></i>
+                        </div>
+                    </div><!-- End review strip -->
+                    
+                    <div class="review_strip_single last">
+                        <img src="img/avatar3.jpg" alt="" class="img-circle">
+                        <small> - 10 March 2015 -</small>
+                        <h4>Jhon Doe</h4>
+                        <p>
+                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+                        </p>
+                        <div class="rating">
+                            <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><i class="icon-star"></i>
+                        </div>
+                    </div><!-- End review strip -->
+                </div>
+            </div>
+  
+        </div><!--End-->
+        
+        
+        
+        <aside class="col-md-4">
+       <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.517716407596!2d83.31536336593666!3d17.720228987879857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3943404d3a0c53%3A0xc35f138e76b66ef9!2sSiripuram%2C+Visakhapatnam%2C+Andhra+Pradesh%2C+India!5e0!3m2!1sen!2sus!4v1456201232503"></iframe>
+          </div>
+          <p class="hidden-sm hidden-xs">
+            <a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap">Enlarge Map</a></p>
+            
+            
+        <div class="box_style_1 expose" id="booking_box">
+            <h3 class="inner">Check Availability</h3>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <label><i class="icon-calendar-7"></i> Check in</label>
+                        <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                     <div class="form-group">
+                        <label><i class="icon-calendar-7"></i> Check out</label>
+                        <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <label>Adults</label>
+                        <div class="numbers-row">
+                            <input type="text" value="1" id="adults" class="qty2 form-control" name="quantity">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <label>Children</label>
+                        <div class="numbers-row">
+                            <input type="text" value="0" id="children" class="qty2 form-control" name="quantity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <em>Required minimum 2 night stay</em>
+            <br><br>
+            <table class="table table_summary">
+                <tbody>
+                <tr>
+                    <td>
+                        Price per night
+                    </td>
+                    <td class="text-right">
+                        $44.00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Cleaning fee<div class="tooltip_styled tooltip-effect-1"><span style="color: #51bce6" class="tooltip-item"><i class="icon-help-circled"></i></span>
+                                <div class="tooltip-content">
+One time cleaning fee is charged per booking. Guest can select and pay for additional cleaning at the time of booking.</div>
+                                </div>
+                    </td>
+                    <td class="text-right">
+                        $4.40
+                    </td>
+                </tr>
+                
+                
+                <tr class="subtotal">
+                    <td>
+                        Subtotal
+                    </td>
+                    <td class="text-right">
+                        $44.40
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Monthly discount
+                    </td>
+                    <td class="text-right">
+                        30%
+                    </td>
+                </tr>
+                
+                
+                <tr class="total">
+                  <td>
+                    Total
+                    </td>
+                  <td class="text-right">
+                    USD $48.40
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+            <a class="btn_full" href="booking-1.html">Instant Book It</a>
+            <a class="btn_full_outline" href="#"><i class=" icon-heart"></i> Add to whislist</a>
+        </div><!--/box_style_1 -->
+        
+       
+        
+       
+        
+                          
+            <div class="box_style_4">
+                        <img src="img/avatar1.jpg" alt="" class="img-circle">
+				<h4>Your Host</h4>
+				<a href="#" class="phone">Magdalena</a>
+				<input type="submit" value="Contact" class="btn_1" id="submit-contact">
+                <div class="general_icons">
+                	<ul>
+                    <li><i class="icon_set_1_icon-84"></i>Email<br>Verified</li>
+                    <li><i class="icon_set_1_icon-94"></i>ID <br>Verified</li>
+                    <li><i class="icon_set_1_icon-62"></i>Phone<br> Verified</li>
+                    </ul>
+                </div>
+			</div>
+            <div class="box_style_4">
+                        <img src="img/avatar1.jpg" alt="" class="img-circle">
+				<h4>Vacation Rental Pro</h4>
+				<a href="#" class="phone">Timmy</a>
+				<input type="submit" value="Apply now" class="btn_1" id="submit-contact">
+                <div class="general_icons">
+                	<ul>
+                    <li><i class="icon_set_1_icon-84"></i>Email<br>Verified</li>
+                    <li><i class="icon_set_1_icon-94"></i>ID <br>Verified</li>
+                    <li><i class="icon_set_1_icon-62"></i>Phone<br> Verified</li>
+                    </ul>
+                </div>
+			</div>
+        
+        </aside>
+        
+    </div><!--End row -->
+    </div><!--End container -->	
+	
+<section class="white_bg margin_60">
+<div class="container">
+<div class="row">
+            <div class="span12">
+            <h4>Similar listings</h4>
+
+              <div id="owl-example" class="owl-carousel">
+
+                <div class="wow zoomIn" data-wow-delay="0.1s">
+					<div class="hotel_container margrt-10">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg" width="800" height="533" class="img-responsive" alt="">
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>59</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<p><strong>Park Hyatt</strong> Hotel</p>
+							<div class="rating">
+								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+							</div><!-- end rating -->
+							<div class="mini-avatar">
+								<img src="img/avatar1.jpg" alt="" class="img-circle">
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box tour -->
+				</div><!-- End col-md-6 -->
+                
+                <div class="wow zoomIn" data-wow-delay="0.1s">
+					<div class="hotel_container margrt-10">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg" width="800" height="533" class="img-responsive" alt="">
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>59</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<p><strong>Park Hyatt</strong> Hotel</p>
+							<div class="rating">
+								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+							</div><!-- end rating -->
+							<div class="mini-avatar">
+								<img src="img/avatar1.jpg" alt="" class="img-circle">
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box tour -->
+				</div><!-- End col-md-6 -->
+                <div class="wow zoomIn" data-wow-delay="0.1s">
+					<div class="hotel_container margrt-10">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg" width="800" height="533" class="img-responsive" alt="">
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>59</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<p><strong>Park Hyatt</strong> Hotel</p>
+							<div class="rating">
+								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+							</div><!-- end rating -->
+							<div class="mini-avatar">
+								<img src="img/avatar1.jpg" alt="" class="img-circle">
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box tour -->
+				</div><!-- End col-md-6 -->
+
+                <div class="wow zoomIn" data-wow-delay="0.1s">
+					<div class="hotel_container margrt-10">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg" width="800" height="533" class="img-responsive" alt="">
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>59</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<p><strong>Park Hyatt</strong> Hotel</p>
+							<div class="rating">
+								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+							</div><!-- end rating -->
+							<div class="mini-avatar">
+								<img src="img/avatar1.jpg" alt="" class="img-circle">
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box tour -->
+				</div><!-- End col-md-6 -->
+
+                <div class="wow zoomIn" data-wow-delay="0.1s">
+					<div class="hotel_container margrt-10">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg" width="800" height="533" class="img-responsive" alt="">
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>59</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<p><strong>Park Hyatt</strong> Hotel</p>
+							<div class="rating">
+								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+							</div><!-- end rating -->
+							<div class="mini-avatar">
+								<img src="img/avatar1.jpg" alt="" class="img-circle">
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box tour -->
+				</div><!-- End col-md-6 -->
+
+                <div class="wow zoomIn" data-wow-delay="0.1s">
+					<div class="hotel_container margrt-10">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg" width="800" height="533" class="img-responsive" alt="">
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>59</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<p><strong>Park Hyatt</strong> Hotel</p>
+							<div class="rating">
+								<i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star-empty"></i>
+							</div><!-- end rating -->
+							<div class="mini-avatar">
+								<img src="img/avatar1.jpg" alt="" class="img-circle">
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box tour -->
+				</div><!-- End col-md-6 -->
+
+                
+
+                
+
+              </div>
+
+
+            </div>
+          </div>
+</div>
+</section>
+	
+	
+	<!-- FOOTER -->
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                    <h3>Need help?</h3>
+                    <a href="tel://004542344599" id="phone">+1 415 445 993</a>
+                    <a href="mailto:info@squaredoor.com.com" id="email_footer">info@squaredoor.com</a>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="jobs.html">Jobs at Squaredoor</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="cancellation.html">Cancellation & Refund Policy</a></li>
+                         <li><a href="privacy-policy.html">Privacy</a></li>
+                          <li><a href="help.html">Help</a></li>
+                           <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h3>Popular resources</h3>
+                    <ul>
+                        <li><a href="#">Why list a property</a></li>
+                        <li><a href="#">Why become a VRPro</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <h3>Localization</h3>
+                    <div class="styled-select">
+                        <select class="form-control" name="lang" id="lang">
+                            <option value="English" selected>English</option>
+                            <option value="French">French</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Russian">Russian</option>
+                        </select>
+                    </div>
+                    <div class="styled-select">
+                        <select class="form-control" name="currency" id="currency">
+                            <option value="USD" selected>USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </div>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-google"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                            <li><a href="#"><i class="icon-vimeo"></i></a></li>
+                            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                        <p>© Squaredoor 2016</p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer>	
+	
+	<div id="toTop"></div><!-- Back to top button -->
+<div id="overlay"></div><!-- Mask on input focus --> 
+<!-- Modal Review -->
+<div class="modal fade" id="myReview" tabindex="-1" role="dialog" aria-labelledby="myReviewLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myReviewLabel">Write your review</h4>
+			</div>
+			<div class="modal-body">
+				<div id="message-review">
+				</div>
+				<form method="post" action="assets/review_transfer.php" name="review_transfer" id="review_transfer">
+                <input name="transfer_name" id="transfer_name" type="hidden" value="Orly Airport to Station">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input name="name_review" id="name_review" type="text" placeholder="Your name" class="form-control">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input name="lastname_review" id="lastname_review" type="text" placeholder="Your last name" class="form-control">
+							</div>
+						</div>
+					</div>
+					<!-- End row -->
+					
+					<hr>
+					
+					
+					<div class="form-group">
+						<textarea name="review_text" id="review_text" class="form-control" style="height:100px" placeholder="Write your review"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="text" id="verify_review" class=" form-control" placeholder="Are you human? 3 + 1 =">
+					</div>
+					<input type="submit" value="Submit" class="btn_1" id="submit-review">
+				</form>
+			</div>
+		</div>
+	</div>
+</div><!-- End modal review -->
+	
+    
+     <!-- Common scripts -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/common_scripts_min.js"></script>
+<script src="js/functions2.js"></script>
+
+ <!-- Specific scripts -->
+<script src="js/icheck.js"></script>
+<script>
+$('input').iCheck({
+   checkboxClass: 'icheckbox_square-grey',
+   radioClass: 'iradio_square-grey'
+ });
+ </script>
+ <!-- Date and time pickers -->
+<script src="js/jquery.sliderPro.min.js"></script>
+<script type="text/javascript">
+	$( document ).ready(function( $ ) {
+		$( '#Img_carousel' ).sliderPro({
+			width: 960,
+			height: 500,
+			fade: true,
+			arrows: true,
+			buttons: false,
+			fullScreen: false,
+			smallSize: 500,
+			startSlide: 0,
+			mediumSize: 1000,
+			largeSize: 3000,
+			thumbnailArrows: true,
+			autoplay: false
+		});
+	});
+</script>
+
+
+ 
+   <!-- Date and time pickers -->
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-timepicker.js"></script>
+<script>
+  $('input.date-pick').datepicker('setDate', 'today');
+  $('input.time-pick').timepicker({
+    minuteStep: 15,
+    showInpunts: false
+})
+</script>
+ <!-- Map -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="js/map.js"></script>
+<script src="js/infobox.js"></script>
+ <!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+
+<script>
+$(document).ready(function(){   
+		$(".carousel").owlCarousel({
+		items : 4,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3]
+		});
+    });
+</script>
+<script>
+$(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel();
+ 
+});
+</script>
+
+
+<!--Review modal validation -->
+<script src="assets/validate.js"></script>
+  </body>
+</html>

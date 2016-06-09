@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Squaredoor">
+    <title>Squaredoor</title>
+    
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    
+    <!-- CSS -->
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/date_time_picker.css" rel="stylesheet">
+
+    
+    <!-- Radio and check inputs -->
+    <link href="css/skins/square/grey.css" rel="stylesheet">
+       
+
+    
+    <!-- Range slider -->
+    <link href="css/ion.rangeSlider.css" rel="stylesheet" >
+    <link href="css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+    
+     <!-- Google web fonts -->
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+        
+</head>
+<body>
+
+<!--[if lte IE 8]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+<![endif]-->
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+<header id="plain">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="index.html"><img src="img/logo_sticky.png" width="160" height="34" data-retina="true" class="logo_normal"></a>
+                        <a href="index.html"><img src="img/logo_sticky.png" width="160" height="34" data-retina="true" class="logo_sticky"></a>
+                    </div>
+                    
+                </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="img/logo_sticky.png" width="160" height="34" alt="Squaredoor" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="submenu"><a href=""><span class="btn-listProp">List a Property</span></a></li>
+                            <li class="submenu"><a href=""><span class="btn-rentalPro">Vacation Rental Pro</span></a></li>
+                            <li><a href="">Sign up</a></li>
+                            <li><a href="">Login</a></li>
+                            <li><div class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/avatar3.jpg" alt="" class="img-account"> Stephanie <i class="icon-down-open-mini"></i></a>
+                            <ul class="dropdown-menu" id="cart_items">
+                                    <li><a href=""><i class="icon-user-2"></i> Pro Profile</a></li>
+                                    <li><a href=""><i class="icon-chart-bar-2"></i> Dashboard</a></li>
+                                    <li><a href=""><i class="icon-cog-1"></i> Settings</a></li>
+                                    <li><a href=""><i class="icon-box-2"></i> Pro Resource Center</a></li>
+                                     <li><a href=""><i class="icon-key-1"></i> Logout</a></li>   
+                                </ul>
+                                </div></li>
+                            
+     
+                        </ul>
+                    </div><!-- End main-menu -->
+                    
+                </nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+
+
+<div id="position">
+    	<div class="container">
+                	<ul>
+                    <li><a href="#">Home</a></li>
+                    <li>Madikeri, Karnataka, India</li>
+                    </ul>
+        </div>
+    </div><!-- Position -->
+    
+<div class="collapse" id="collapseMap">
+	<div id="map" class="map"></div>
+</div><!-- End Map -->
+
+<div class="container margin_60">
+	<div class="row">
+	<aside class="col-lg-4 col-md-4">
+            <p>
+                <a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap">View on map</a>
+            </p>
+            
+            <div class="box_style_1 expose">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="form-group">
+                        <label><i class="icon-calendar-7"></i> Check in</label>
+                        <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                     <div class="form-group">
+                        <label><i class="icon-calendar-7"></i> Check out</label>
+                        <input class="date-pick form-control" data-date-format="M d, D" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label>Adults</label>
+                        <div class="numbers-row">
+                            <input type="text" value="1" id="adults" class="qty2 form-control" name="quantity">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label>Children</label>
+                        <div class="numbers-row">
+                            <input type="text" value="0" id="children" class="qty2 form-control" name="quantity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            <a class="btn_full" href="#">Search</a>
+        </div><!--/box_style_1 -->
+   
+		<div id="filters_col">
+			<a data-toggle="collapse" href="#collapseFilters" aria-expanded="false" aria-controls="collapseFilters" id="filters_col_bt"><i class="icon_set_1_icon-65"></i>Filters <i class="icon-plus-1 pull-right"></i></a>
+			<div class="collapse in" id="collapseFilters">
+				<div class="filter_type">
+					<h6>Price</h6>
+					<input type="text" id="range" name="range" value="">
+				</div>
+                
+                
+                <div class="filter_type">
+					<h6>Property Type</h6>
+					<ul>
+						<li><label><input type="checkbox">Apartment</label></li>
+                        <li><label><input type="checkbox">House</label></li>
+                        <li><label><input type="checkbox">Hotel</label></li>
+  					</ul>
+            <a class="btn_collapse" data-toggle="collapse" href="#type" aria-expanded="false" aria-controls="type">
+            	<i class="icon-plus-circled"></i>More
+            </a> 
+            <div class="collapse" id="type">
+                        <ul>
+						<li><label><input type="checkbox">Boat House</label></li>
+						<li><label><input type="checkbox">Bungalow</label></li>
+						<li><label><input type="checkbox">Condo</label></li>
+						<li><label><input type="checkbox">Mobile House</label></li>
+                        <li><label><input type="checkbox">Town House</label></li>
+                        <li><label><input type="checkbox">Single Family Home</label></li>
+                        <li><label><input type="checkbox">Villa</label></li>
+                        <li><label><input type="checkbox">Homestay</label></li>
+                        <li><label><input type="checkbox">Resort</label></li>
+                        <li><label><input type="checkbox">Service Apartment</label></li>
+                        <li><label><input type="checkbox">Lodge</label></li>
+                        <li><label><input type="checkbox">Motel</label></li>
+					</ul>
+                        
+            </div><!-- End collapse form -->
+				</div>
+                
+                
+                <div class="filter_type">
+					<h6>Property Size</h6>
+					<div class="form-group">
+							<label>Bedrooms</label>
+							<select class="form-control" name="country" id="country">
+								<option selected>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+							</select>
+						</div>
+                        <div class="form-group">
+							<label>Bathrooms</label>
+							<select class="form-control" name="country" id="country">
+								<option selected>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+                                <option>5+</option>
+                            </select>
+						</div>
+                        <div class="form-group">
+							<label>Beds</label>
+							<select class="form-control" name="country" id="country">
+								<option selected>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10+</option>
+                            </select>
+						</div>
+				</div>
+                
+                
+				
+				<div class="filter_type">
+					<h6>Amenities</h6>
+					<ul>
+						<li><label><input type="checkbox">Accessibility</label></li>
+                        <li><label><input type="checkbox">Kitchen</label></li>
+                        <li><label><input type="checkbox">Parking</label></li>
+                        <li><label><input type="checkbox">Pet allowed</label></li>
+                        <li><label><input type="checkbox">Washer/Dryer</label></li>
+						<li><label><input type="checkbox">Wifi</label></li>
+					</ul>
+           <a class="btn_collapse" data-toggle="collapse" href="#amenities" aria-expanded="false" aria-controls="amenities">
+            	<i class="icon-plus-circled"></i>More
+            </a> 
+            <div class="collapse" id="amenities">
+                        <ul>
+						<h5>Basics</h5>
+                            <ul>
+                                <li><label><input type="checkbox">Cable/Satellite TV</label></li>
+                                <li><label><input type="checkbox">Family/Kid Friendly</label></li>
+                                <li><label><input type="checkbox">First Aid Kit</label></li>
+                                <li><label><input type="checkbox">Smoking allowed</label></li>
+                            </ul>
+                            
+                            <h5>Additional Features</h5>
+                            <ul>
+                                <li><label><input type="checkbox">Air Conditioning</label></li>
+                                <li><label><input type="checkbox">Central Heating</label></li>
+                                <li><label><input type="checkbox">Elevator</label></li>
+                                <li><label><input type="checkbox">Indoor Fireplace</label></li>
+                                <li><label><input type="checkbox">Gym</label></li>
+                                <li><label><input type="checkbox">Pool table</label></li>
+                            </ul>
+
+                            
+                            <h5>Entertainment</h5>
+                            <ul>
+                                <li><label><input type="checkbox">DVD player</label></li>
+                                <li><label><input type="checkbox">CD player</label></li>
+                                <li><label><input type="checkbox">iPod dock</label></li>
+                                <li><label><input type="checkbox">Plasma TV</label></li>
+                                <li><label><input type="checkbox">Board games</label></li>
+                            </ul>
+                            <h5>Outdoors</h5>
+                            <ul>
+                                <li><label><input type="checkbox">Barbeque Grill</label></li>
+                                <li><label><input type="checkbox">Pool</label></li>
+                            </ul>
+                            <h5>Safety</h5>
+                            <ul>
+                                <li><label><input type="checkbox">Smoke detector</label></li>
+                                <li><label><input type="checkbox">Carbon Monoxide detector</label></li>
+                            </ul>
+					</ul>
+                        
+            </div><!-- End collapse form -->
+				</div>
+			</div><!--End collapse -->
+		</div><!--End filters col-->
+		
+		</aside><!--End aside -->
+        
+		<div class="col-lg-9 col-md-8">
+        
+			<div id="tools">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="styled-select-filters">
+							<select name="sort_price" id="sort_price">
+								<option value="" selected>Sort by price</option>
+								<option value="lower">Lowest price</option>
+								<option value="higher">Highest price</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<div class="styled-select-filters">
+							<select name="sort_rating" id="sort_rating">
+								<option value="" selected>Sort by ranking</option>
+								<option value="lower">Lowest ranking</option>
+								<option value="higher">Highest ranking</option>
+							</select>
+						</div>
+					</div>
+					
+				</div>
+			</div><!--End tools -->
+            
+			<!-- End row -->
+                
+                <div class="row">
+				<div class="col-md-6 col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+					<div class="hotel_container">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg"  width="800" height="533" class="img-responsive" alt="">
+							<div class="ribbon instant_booking"></div>
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>39</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<h3>Shreya Homestay</h3>
+							<div class="rating">
+								0 reviews
+							</div><!-- end rating -->
+							<div class="wishlist">
+								<a class="tooltip_flip tooltip-effect-1" href="#">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to favorites</span></span></a>
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box -->
+				</div><!-- End col-md-6 -->
+                
+				<div class="col-md-6 col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+					<div class="hotel_container">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg"  width="800" height="533" class="img-responsive" alt="">
+							<div class="ribbon instant_booking"></div>
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>39</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<h3>Shreya Homestay</h3>
+							<div class="rating">
+								0 reviews
+							</div><!-- end rating -->
+							<div class="wishlist">
+								<a class="tooltip_flip tooltip-effect-1" href="#">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to favorites</span></span></a>
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box -->
+				</div><!-- End col-md-6 -->
+                </div><!-- End row -->
+                
+                <div class="row">
+				<div class="col-md-6 col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+					<div class="hotel_container">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg"  width="800" height="533" class="img-responsive" alt="">
+							<div class="ribbon instant_booking"></div>
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>39</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<h3>Shreya Homestay</h3>
+							<div class="rating">
+								0 reviews
+							</div><!-- end rating -->
+							<div class="wishlist">
+								<a class="tooltip_flip tooltip-effect-1" href="#">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to favorites</span></span></a>
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box -->
+				</div><!-- End col-md-6 -->
+                
+				<div class="col-md-6 col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+					<div class="hotel_container">
+						<div class="img_container">
+							<a href="detail.html">
+							<img src="img/hotel_1.jpg"  width="800" height="533" class="img-responsive" alt="">
+							<div class="ribbon instant_booking"></div>
+							<div class="short_info hotel">
+								avg/night<span class="price"><sup>$</sup>39</span>
+							</div>
+							</a>
+						</div>
+						<div class="hotel_title">
+							<h3>Shreya Homestay</h3>
+							<div class="rating">
+								0 reviews
+							</div><!-- end rating -->
+							<div class="wishlist">
+								<a class="tooltip_flip tooltip-effect-1" href="#">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to favorites</span></span></a>
+							</div><!-- End wish list-->
+						</div>
+					</div><!-- End box -->
+				</div><!-- End col-md-6 -->
+                </div><!-- End row -->
+            
+            <hr>
+            
+            
+                
+				<div class="text-center">
+					<ul class="pagination">
+						<li><a href="#">Prev</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">Next</a></li>
+					</ul>
+				</div><!-- end pagination-->
+                
+		</div><!-- End col lg 9 -->
+	</div><!-- End row -->
+</div><!-- End container -->
+    
+<footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                    <h3>Need help?</h3>
+                    <a href="tel://004542344599" id="phone">+1 415 445 993</a>
+                    <a href="mailto:info@squaredoor.com.com" id="email_footer">info@squaredoor.com</a>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Jobs at Squaredoor</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Cancellation & Refund Policy</a></li>
+                         <li><a href="#">Privacy</a></li>
+                          <li><a href="#">Help</a></li>
+                           <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h3>Popular resources</h3>
+                    <ul>
+                        <li><a href="#">Why list a property</a></li>
+                        <li><a href="#">Why become a VRPro</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <h3>Localization</h3>
+                    <div class="styled-select">
+                        <select class="form-control" name="lang" id="lang">
+                            <option value="English" selected>English</option>
+                            <option value="French">French</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Russian">Russian</option>
+                        </select>
+                    </div>
+                    <div class="styled-select">
+                        <select class="form-control" name="currency" id="currency">
+                            <option value="USD" selected>USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                            <option value="RUB">RUB</option>
+                        </select>
+                    </div>
+                </div>
+            </div><!-- End row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="social_footer">
+                        <ul>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-google"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                            <li><a href="#"><i class="icon-vimeo"></i></a></li>
+                            <li><a href="#"><i class="icon-youtube-play"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                        </ul>
+                        <p>© Squaredoor 2016</p>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End container -->
+    </footer><!-- End footer -->
+
+<div id="toTop"></div><!-- Back to top button -->
+<!-- Date and time pickers -->
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-timepicker.js"></script>
+<script>
+  $('input.date-pick').datepicker('setDate', 'today');
+  $('input.time-pick').timepicker({
+    minuteStep: 15,
+    showInpunts: false
+})
+</script>
+<!-- Common scripts -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/common_scripts_min.js"></script>
+<script src="js/functions2.js"></script>
+
+<!-- Specific scripts -->
+<!-- Check and radio inputs -->
+<script src="js/icheck.js"></script>
+<script>  
+$('input').iCheck({
+   checkboxClass: 'icheckbox_square-grey',
+   radioClass: 'iradio_square-grey'
+ });
+ </script>
+ <!-- Map -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script src="js/map.js"></script>
+<script src="js/infobox.js"></script>
+<!--Review modal validation -->
+<script src="assets/validate.js"></script>
+  </body>
+</html>
